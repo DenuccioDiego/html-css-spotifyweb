@@ -12,16 +12,40 @@
 
 /* ---- /GENERAL RULES----- */
 
+#container{
+     height: 100vh;
+     width: 100%;
+     background-color: rgba(46, 12, 240, 0.424);
+}
+
+#top_container{
+     
+     background-color: rgba(165, 42, 42, 0.37);
+}
+
+#inferior_container{
+     position: fixed;
+     left: 0;
+     bottom: 0%;
+     z-index:+1;
+     height: 30vh;
+     background-color: rgba(0, 255, 255, 0.383);
+}
 
 
+header{
+     
+     height: 20vh;
+     background-color: rgba(128, 255, 0, 0.493);
+     display: flex;
 
+}
 
-
-
-
-
-
-
+nav{
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(210, 105, 30, 0.397);
+}
 
 
 
