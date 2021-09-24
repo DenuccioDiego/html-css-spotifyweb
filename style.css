@@ -4,46 +4,90 @@
      margin: auto;
      margin: 0;
      padding: 0;  
-     font-family: 'Roboto', sans-serif;
-}
+     font-family: 'Roboto', sans-serif;    }
 
-.clearfix{
+.clearfix::after{
      clear: both;
      content: "";
      display: table;      }
 
+ul{
+     list-style-type: none;  }
+
 /* ---- /GENERAL RULES----- */
 
-#container{
-     height: 100vh;
-     width: 100%;
-     overflow-y: hidden;
-}
 
-#top_container{
-     display: flex;
 
-}
-#inferior_container{
-     height: 10vh;
-     background-color: tomato;
-}
-#conteiner_nav{
+/* ---- BLOCCO SINISTRO-NAV- -------- */
+
+#container_nav{
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     width: 20%;
-     height: 90vh;
+     width: 15%;
      background-color: black;
      color: white;
      padding: 10px 10px 0 10px;
 }
 
+#nav_up div , #nav_up li , #nav_up h4 , #nav_up span {
+     padding-bottom: 8px;
+}
+
+#icone_nav , #playlist span , #lista_playlist , #download_app {
+     color: #6d6d6d;    
+}
+
+.fa-plus-square{
+     font-size: 200%;
+     vertical-align: middle;
+}
+
+hr{
+     border:0.5px solid #717171;
+     margin:5px 0 5px;
+}
+
+#logo{
+     width: 50%;
+}
+
+#username img , #icone_nav img , #download_app img {
+     width: 10%;
+     vertical-align: middle;
+}
+
+
+
+
+/* ---- BLOCCO SINISTRO-NAV- -------- */
+
 #main_body{
-     width: calc(100vw - 20%);
-     background-color: aquamarine;
+     width: calc(100vw - 10%);
+}
+
+#container{
+     height: 100vh;
+     width: 100%;
+     overflow-y: hidden;
+     position: relative;
+}
+
+#top_container{
+     display: flex;
      height: 90vh;
-     
+}
+
+#inferior_container{
+     height: 10vh;
+     background-color: #282828;
+     position: absolute;
+     z-index: 1;
+     width: 100%;    
+}
+
+#main_body{
+     width: calc(100vw - 10%);
 }
 
 #upgrade{
@@ -51,13 +95,14 @@
      height: 10vh;
      display: flex;
      justify-content: end;
-     align-items: center;
-     align-self: row;
-     
-     
+     align-items: center;   
 }
+
 #container_canzoni{
-     overflow-y: visible;
+     overflow-y: auto;
+     height: 100%;
+     background-color: #141922;
+     color: white;
     
 }
 
@@ -70,15 +115,9 @@
      text-align: center;
      
 }
-/* ---------- */
 
-#logo{
-     width: 50%;
-}
 
-ul{
-     list-style-type: none;
-}
+
 
 
 
