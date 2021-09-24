@@ -1,4 +1,4 @@
-/* ---- GENERAL RULES----- */
+/* ---- GENERAL RULES ----- */
 
 *{
      margin: auto;
@@ -14,12 +14,54 @@
 ul{
      list-style-type: none;  }
 
-/* ---- /GENERAL RULES----- */
+#container{
+     height: 100vh;
+     width: 100%;
+     overflow-y: hidden;
+     position: relative;     }  
 
+/* ---- /GENERAL RULES ----- */
 
+/*-------- BARRA TOP ------- */
+#top_container{
+     display: flex;
+     height: 90vh;
+}
 
-/* ---- BLOCCO SINISTRO-NAV- -------- */
+#upgrade{
+     background-color: #080b12;
+     height: 10vh;
+     display: flex;
+     justify-content: end;
+     align-items: center;   
+}
 
+#upgrade>div{
+     border:solid 1px;
+     border-radius: 25px;
+     color: white;
+     padding: 10px;
+     width: 20%;
+     text-align: center;     
+}
+/*-------- BARRA TOP ------- */
+
+/* -------BLOCCO DESTRO ------ */
+#main_body{
+     width: calc(100vw - 10%);
+}
+
+#container_canzoni{
+     overflow-y: auto;
+     height: 100%;
+     background-color: #141922;
+     color: white;
+    
+}
+
+/* -------BLOCCO DESTRO --------- */
+
+/* ----- BLOCCO SINISTRO-NAV- -------- */
 #container_nav{
      display: flex;
      flex-direction: column;
@@ -28,6 +70,10 @@ ul{
      background-color: black;
      color: white;
      padding: 10px 10px 0 10px;
+}
+
+#logo{
+     width: 50%;
 }
 
 #nav_up div , #nav_up li , #nav_up h4 , #nav_up span {
@@ -48,36 +94,14 @@ hr{
      margin:5px 0 5px;
 }
 
-#logo{
-     width: 50%;
-}
-
 #username img , #icone_nav img , #download_app img {
      width: 10%;
      vertical-align: middle;
 }
+/* ----- BLOCCO SINISTRO-NAV- -------- */
 
 
-
-
-/* ---- BLOCCO SINISTRO-NAV- -------- */
-
-#main_body{
-     width: calc(100vw - 10%);
-}
-
-#container{
-     height: 100vh;
-     width: 100%;
-     overflow-y: hidden;
-     position: relative;
-}
-
-#top_container{
-     display: flex;
-     height: 90vh;
-}
-
+/* ------- FOOTER ----------- */
 #inferior_container{
      height: 10vh;
      background-color: #282828;
@@ -85,37 +109,7 @@ hr{
      z-index: 1;
      width: 100%;    
 }
-
-#main_body{
-     width: calc(100vw - 10%);
-}
-
-#upgrade{
-     background-color: #080b12;
-     height: 10vh;
-     display: flex;
-     justify-content: end;
-     align-items: center;   
-}
-
-#container_canzoni{
-     overflow-y: auto;
-     height: 100%;
-     background-color: #141922;
-     color: white;
-    
-}
-
-#upgrade>div{
-     border:solid 1px;
-     border-radius: 25px;
-     color: white;
-     padding: 10px;
-     width: 20%;
-     text-align: center;
-     
-}
-
+/* ------- FOOTER ----------- */
 
 
 
