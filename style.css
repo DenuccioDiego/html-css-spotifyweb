@@ -1,103 +1,136 @@
 /* ---- GENERAL RULES ----- */
-
 *{
      margin: auto;
      margin: 0;
      padding: 0;  
-     font-family: 'Roboto', sans-serif;    }
+     font-family: 'Roboto', sans-serif;}
 
 .clearfix::after{
      clear: both;
      content: "";
      display: table;      }
 
+.flex{
+     display: flex;   }
+
 ul{
      list-style-type: none;  }
 
 #container{
+     font-size: 85%;
      height: 100vh;
      width: 100%;
      overflow-y: hidden;
      position: relative;     }  
+ 
+#icone_nav ul li:hover , #playlist h5:hover , #playlist span:hover , #lista_playlist ul li:hover , #download_app span:hover , #nav_main_body ul li:hover{
+     color: white;
+     cursor: grab ;      }    
 
+#icone_nav , #playlist span , #lista_playlist , #download_app , #nav_main_body ul li {
+     color: #6d6d6d;    }     
 /* ---- /GENERAL RULES ----- */
 
 /*-------- BARRA TOP ------- */
 #top_container{
-     display: flex;
-     height: 90vh;
+     height: 90vh;    
 }
 
 #upgrade{
      background-color: #080b12;
      height: 10vh;
-     display: flex;
      justify-content: end;
-     align-items: center;   
-}
+     align-items: center;     }
 
 #upgrade>div{
      border:solid 1px;
      border-radius: 25px;
      color: white;
-     padding: 10px;
-     width: 20%;
-     text-align: center;     
-}
+     padding: 8px 16px;
+     width: 17%;
+     text-align: center;     }
+
+#upgrade>div:hover{
+     transform: scale(1.15);
+     transform-origin: right;
+     cursor: grab;  }
 /*-------- BARRA TOP ------- */
 
 /* -------BLOCCO DESTRO ------ */
 #main_body{
-     width: calc(100vw - 10%);
-}
+     width: calc(100vw - 10%);    }
 
-#container_canzoni{
+#container_blocco_destro{
      overflow-y: auto;
-     height: 100%;
+     overflow-x: auto;
      background-color: #141922;
-     color: white;
-    
-}
+     color: white;     }
+
+#nav_main_body ul li{
+     display: inline-block;
+     padding: 0 15px;
+     margin: 20px 0;  }
+
+#nav_main_body{
+     justify-content: center;  }
+
+#nav_main_body ul :first-child{
+     position: relative;  }
+
+#nav_main_body ul :first-child::after{
+     background-color: #adff2f;
+     bottom: -5px;
+     content: '';
+     height: 2px;
+     left: 50%;
+     position: absolute;
+     transform: translate(-50%,0);
+     width: 25px;  }
+
+#container_canzoni{ 
+     padding: 15px;
+     flex-direction: column;
+     gap: 15px;     }
+
+#container_canzoni div , #container_canzoni img{
+     width: 15vw;      }
+
+#recent_played , #user_playlist , #consigliate_playlist {
+     gap: 10px;    }
 
 /* -------BLOCCO DESTRO --------- */
 
 /* ----- BLOCCO SINISTRO-NAV- -------- */
 #container_nav{
-     display: flex;
      flex-direction: column;
      justify-content: space-between;
      width: 15%;
      background-color: black;
      color: white;
-     padding: 10px 10px 0 10px;
-}
+     padding: 10px 10px 0 10px;   }
 
 #logo{
-     width: 50%;
-}
+     width: 50%;  }
 
 #nav_up div , #nav_up li , #nav_up h4 , #nav_up span {
-     padding-bottom: 8px;
-}
-
-#icone_nav , #playlist span , #lista_playlist , #download_app {
-     color: #6d6d6d;    
-}
+     padding-bottom: 8px;  }
 
 .fa-plus-square{
      font-size: 200%;
-     vertical-align: middle;
-}
+     vertical-align: middle;  }
 
 hr{
      border:0.5px solid #717171;
-     margin:5px 0 5px;
-}
+     margin:5px 0 5px;  }
 
 #username img , #icone_nav img , #download_app img {
      width: 10%;
-     vertical-align: middle;
-}
+     vertical-align: middle;  }
+
+#icone_nav ul li:first-child{
+     margin-left: -10px;
+     padding-left: 7px;
+     border-left: #adff2f solid ;  }
 /* ----- BLOCCO SINISTRO-NAV- -------- */
 
 
@@ -106,9 +139,39 @@ hr{
      height: 10vh;
      background-color: #282828;
      position: absolute;
-     z-index: 1;
-     width: 100%;    
+     z-index: 2;
+     width: 100%;  
+     justify-content: space-between;
+     align-items: center;
+     align-content: center;     
 }
+
+#sx_footer , #dx_footer{
+    
+}
+
+#mid_footer{
+     
+     text-align: center;
+}
+
+#inferior_container>div{
+    
+     
+}
+
+#sx_footer img{
+     width: 10%;
+     
+}
+
+#mid_footer{
+     align-self: center;
+}
+
+
+
+
 /* ------- FOOTER ----------- */
 
 

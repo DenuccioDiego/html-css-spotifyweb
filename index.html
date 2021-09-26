@@ -11,13 +11,13 @@
 </head>
 
 <body>
-     
+
      <div id="container">
           
-          <div id="top_container">
+          <div class="flex" id="top_container">
 
 <!-- BLOCCO SINISTRO-NAV-  -->
-               <nav id="container_nav">
+               <nav class="flex" id="container_nav">
 
                     <div id="nav_up">
 
@@ -80,7 +80,7 @@
                <div id="main_body">
 
 <!-- BARRA TOP    -->
-                    <header id="upgrade">
+                    <header class="flex" id="upgrade">
 
                          <div>
                               EFFETTUA  L'UPGRADE
@@ -90,75 +90,98 @@
 <!-- BARRA TOP    -->
 
 <!-- BLOCCO DESTRO -->
-                    <div id=container_canzoni> 
+                    <div id="container_blocco_destro"> 
 
-                         <header id="nav_main_body">
+                         <header class="flex" id="nav_main_body">
 
                               <ul>
-                                   <li>bla1</li>
-                                   <li>bla2</li>
-                                   <li>bla3</li>
-                                   <li>bla4</li>
-                                   <li>bla5</li>
-                                   <li>bla6</li>
+                                   <li>IN EVIDENZA</li>
+                                   <li>PODCAST</li>
+                                   <li>CLASSIFICHE</li>
+                                   <li>GENERI E MOOD</li>
+                                   <li>NUOVE USCITE</li>
+                                   <li>SCOPRI</li>
                               </ul>
 
                          </header>
 
-                         <div>
+                         <div class="flex" id="container_canzoni">
+
                               <h1>Recent played</h1>
+                              <div class="flex" id="recent_played">
 
-                              <div>
-                                   <img src="" alt="">
-                                   <span>Heavy metal</span>
-                                   <span>Subtitle</span>
+                                   <div>
+                                        <img src="./img/metal_lifting.jpg" alt=""><br>
+                                        <span>Heavy metal</span><br>
+                                        <span>Subtitle</span>
+                                   </div>
+
+                                   <div>
+                                        <img src="./img/stranger.jpeg" alt=""><br>
+                                         
+                                             <span>Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</span><br>
+                                             <span>Kyle Dixon & Micheal Stein</span>
+                                        
+                                       
+                                   </div>
+
+                                   <div>
+                                        <img src="./img/aquietplace.jpeg" alt=""><br>
+                                        <span>A quiet place</span><br>
+                                        <span>Subtitle</span>
+                                   </div>
+
+                                   <div>
+                                        <img src="./img/split.jpeg" alt=""><br>
+                                        <span>Split</span><br>
+                                        <span>Subtitle</span>
+                                   </div>
+
+                                   <div>
+                                        <img src="./img/cure.jpeg" alt=""><br>
+                                        <span>A cure for wellness</span><br>
+                                        <span>Subtitle</span>
+                                   </div>
+
+                                   <div>
+                                        <img src="./img/sinister.jpeg" alt=""><br>
+                                        <span>Sinister</span><br>
+                                        <span>Subtitle</span>
+                                   </div>
                               </div>
 
-                              <div>
-                                   <img src="" alt="">
-                                   <span>Heavy metal</span>
-                                   <span>Subtitle</span>
-                              </div>
-
-                              <div>
-                                   <img src="" alt="">
-                                   <span>Heavy metal</span>
-                                   <span>Subtitle</span>
-                              </div>
-
-                              <div>
-                                   <img src="" alt="">
-                                   <span>Heavy metal</span>
-                                   <span>Subtitle</span>
-                              </div>
-
-                              <div>
-                                   <img src="" alt="">
-                                   <span>Heavy metal</span>
-                                   <span>Subtitle</span>
-                              </div>
-
-                              <div>
-                                   <img src="" alt="">
-                                   <span>Heavy metal</span>
-                                   <span>Subtitle</span>
-                              </div>
                               
+                                   <h1>Creato per John Doe</h1>
+                                   <span>Più ascolti, più accurati saranno i suggerimenti</span>
                               
-                         </div>
+                              <div class="flex" id="user_playlist">
+                                   <div>
+                                        <img src="./img/radar.jpeg" alt=""><br>
+                                        <span>Release Radar</span>
+                                   </div>
+                                   
+                                   <div>
+                                        <img src="./img/mixdaily.jpeg" alt=""><br>
+                                        <span>Daily Mix 1</span>
+                                   </div>
+                                   
+                              </div>
 
-                         <div>
-                              <h1>Creato per John Doe</h1>
-                              <span>Più ascolti, più accurati saranno i suggerimenti</span>
-                              <div></div>
-                              <div></div>
-                         </div>
+                              
+                                   <h1>Artisti più popolari</h1>
+                                   <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                              
+                              <div class="flex" id="consigliate_playlist">     
+                                   <div>
+                                        <img src="./img/youg.jpeg" alt=""><br>
+                                        <span>Lana del Rey</span>
+                                   </div>
 
-                         <div>
-                              <h1>Artisti più popolari</h1>
-                              <span>Più ascolti, più accurati saranno i suggerimenti</span>
-                              <div></div>
-                              <div></div>
+                                   <div>
+                                        <img src="./img/einaudi.jpeg" alt=""><br>
+                                        <span>Ludovico Einuadi</span>
+                                   </div>
+                              </div>
                          </div>
                     </div>
 <!-- BLOCCO DESTRO -->
@@ -167,10 +190,21 @@
           </div>
 
 <!-- FOOTER  -->
-          <footer id="inferior_container">
-               <div></div>
-               <div></div>
-               <div></div>
+          <footer class="flex" id="inferior_container">
+
+               <div id="sx_footer">
+                    <img src="./img/sinister.jpeg" alt="">
+                    
+               </div>
+
+               <div id="mid_footer">
+                    2dddddddddddddddddddddddddddddddddddd
+               </div>
+
+               <div id="dx_footer">
+                    3dddddddddddddddddddddddddddddddddddddddddddddddddd
+               </div>
+
           </footer>
 <!-- FOOTER  -->
 
