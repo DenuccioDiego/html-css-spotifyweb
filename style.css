@@ -1,5 +1,6 @@
 /* ---- GENERAL RULES ----- */
-*{
+*{   
+     box-sizing: border-box;
      margin: auto;
      margin: 0;
      padding: 0;  
@@ -59,7 +60,7 @@ ul{
 /* -------BLOCCO DESTRO ------ */
 #main_body{
      width: calc(100vw - 10%);
-     height: 80vh ;    }
+     height: calc(100vh - 20%);    }
 
 #container_blocco_destro{
      overflow-y: auto;
@@ -92,13 +93,19 @@ ul{
      padding: 15px;
      flex-direction: column;   }
 
-.colonna{
-     width: calc(250% / 16);
+.colonna img{
+     width: 100%;
+     
 }
+
+.colonna {
+     margin: 0 10px;
+     width: calc(100% / 6);      }
 /* -------BLOCCO DESTRO --------- */
 
 /* ----- BLOCCO SINISTRO-NAV- -------- */
 #container_nav{
+     height: calc(100vh - 65px);
      flex-direction: column;
      justify-content: space-between;
      width: 15%;
@@ -133,16 +140,20 @@ hr{
 
 /* ------- FOOTER ----------- */
 #inferior_container{
-     height: 10vh;
+     height: 65px;
      background-color: #282828;
      width: 100%;  
      justify-content: space-between;
      align-items: center;
      align-content: center;
-     color: white;    }
+     color: white;   
+     position: fixed;
+     bottom: 0;
+     left: 0;  }
 
 #dx_footer , #sx_footer , #mid_footer {
-     width: 33%  } 
+     width: 33% ;
+     height: auto;  } 
 
 #mid_footer{
      text-align: center;  }
@@ -176,18 +187,46 @@ hr{
 #mid_footer{
      align-self: center;
      justify-content: center; }
-
-.slide{
-     width: 25%;
+     
+.linea{
+     width: 40%;
      height: 10px;
-     background:red;
-     outline: none;}
+     border-radius: 10px;
+     background-color: #6d6d6d;
+     display: inline-block; }    
 
+.linea_due{
+     display: none;
+     background-color: greenyellow;
+     width: 50%;
+     height: 10px;
+     border-radius: 10px; }
 
+.pallino{
+     margin-left: 94%;
+     display: none;
+     width: 10px;
+     height: 10px;
+     background-color: white;
+     border-radius: 50%;   }
+
+#mid_footer .linea{
+     width: 80%;  }
+
+.linea:hover .linea_due , .pallino{
+     display: block;
+     cursor: pointer;   }
 /* ------- FOOTER ----------- */
 
+/*-- MEDIA QUERIES-- */
 
-
+@media screen and (max-width:768px) {
+     #recent_played :nth-child(6) {
+          background-color: yellow;
+          flex-wrap: wrap;
+          
+     }    
+}
 
 
 
