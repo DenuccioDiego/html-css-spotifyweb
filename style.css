@@ -92,9 +92,9 @@ ul{
      padding: 15px;
      flex-direction: column;   }
 
-#container_canzoni img {
-     width: calc(100% - 20px)      }
-
+.colonna{
+     width: calc(250% / 16);
+}
 /* -------BLOCCO DESTRO --------- */
 
 /* ----- BLOCCO SINISTRO-NAV- -------- */
