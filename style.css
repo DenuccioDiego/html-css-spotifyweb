@@ -58,13 +58,14 @@ ul{
 
 /* -------BLOCCO DESTRO ------ */
 #main_body{
-     width: calc(100vw - 10%);    }
+     width: calc(100vw - 10%);
+     height: 80vh ;    }
 
 #container_blocco_destro{
      overflow-y: auto;
-     overflow-x: auto;
      background-color: #141922;
-     color: white;     }
+     color: white; 
+     height: 100%;   }
 
 #nav_main_body ul li{
      display: inline-block;
@@ -89,14 +90,10 @@ ul{
 
 #container_canzoni{ 
      padding: 15px;
-     flex-direction: column;
-     gap: 15px;     }
+     flex-direction: column;   }
 
-#container_canzoni div , #container_canzoni img{
-     width: 15vw;      }
-
-#recent_played , #user_playlist , #consigliate_playlist {
-     gap: 10px;    }
+#container_canzoni img {
+     width: calc(100% - 20px)      }
 
 /* -------BLOCCO DESTRO --------- */
 
@@ -138,38 +135,65 @@ hr{
 #inferior_container{
      height: 10vh;
      background-color: #282828;
-     position: absolute;
-     z-index: 2;
      width: 100%;  
      justify-content: space-between;
      align-items: center;
-     align-content: center;     
+     align-content: center;
+     color: white;
 }
 
-#sx_footer , #dx_footer{
-    
-}
+
+
+#dx_footer , #sx_footer , #mid_footer {
+     width: 33%
+
+} 
 
 #mid_footer{
-     
      text-align: center;
 }
-
-#inferior_container>div{
+#mid_footer input{
+     width: 90%;
+}
+#mid_footer i{
+     padding: 0 10px 5px;
+     font-size: 110%;
+}
+#dx_footer{
+     text-align: end;
     
-     
 }
 
-#sx_footer img{
+#dx_footer i {
+     margin: 0 10px ;
+}
+
+#sx_footer div{
+     display: inline-block;
+     margin: 0px 10px;
+     vertical-align: super;
+
+}
+
+.grigio{
+     color:#6d6d6d ;
+}
+
+#sx_footer>img{
      width: 10%;
-     
+     margin-left: 5px;
 }
 
 #mid_footer{
      align-self: center;
+     justify-content: center;
 }
 
-
+.slide{
+     width: 25%;
+     height: 10px;
+     background:red;
+     outline: none;}
 
 
 /* ------- FOOTER ----------- */
