@@ -123,6 +123,10 @@ ul{
      font-size: 200%;
      vertical-align: middle;  }
 
+#lista_playlist{
+     overflow-y: auto;
+}     
+
 hr{
      border:0.5px solid #717171;
      margin:5px 0 5px;  }
@@ -221,11 +225,21 @@ hr{
 /*-- MEDIA QUERIES-- */
 
 @media screen and (max-width:768px) {
-     #recent_played :nth-child(6) {
-          background-color: yellow;
+     #recent_played {
           flex-wrap: wrap;
+     }  
+     
+     .colonna{
+          width: calc(100% / 5);
           
-     }    
+          
+     }
+}
+
+@media screen and (max-width:520px) {
+     .colonna {
+          width: calc(100% / 3);
+     }
 }
 
 
